@@ -23,7 +23,7 @@ module.exports = function() {
 					return resultado;
 				},
 				
-				somar: function(numero2, numero2) {
+				somar: function(numero1, numero2) {
 					return numero2 + numero1;
 				},
 				
