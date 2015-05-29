@@ -55,6 +55,25 @@ describe('Calculadora', function() {
 				resultado.should.be.equal(0);
 			});
 			
+			it('Deveria retornar 2 quando for passado 4 e 2.', function() {
+				var numero1 = 4;
+				var numero2 = 2;
+				
+				var resultado = controller.utils.calculos.subtrair(numero1, numero2);
+				
+				resultado.should.be.a.Number;
+				resultado.should.be.equal(2);
+			});
+			it('Deveria retornar -1 quando for passado -3 e 2.', function() {
+				var numero1 = -3;
+				var numero2 = 2;
+				
+				var resultado = controller.utils.calculos.subtrair(numero1, numero2);
+				
+				resultado.should.be.a.Number;
+				resultado.should.be.equal(-1);
+			});
+			
 		});
 		
 		describe('Multiplicar', function() {
